@@ -1,16 +1,16 @@
 const express = require("express");
 const app = express();
-const taskRoutes = require('./routes/task')
+const taskRoutes = require("./routes/task");
 
 // middleware
 app.use(express.json());
 
 // routes
-app.get("/hello", (req, res) => {
-  res.send("Task Manager App");
-});
+app.use("/api/v1/tasks", taskRoutes);
 
-app.use('/api/v1/tasks', taskRoutes)
+// app.get("/hello", (req, res) => {
+//   res.send("Task Manager App");
+// });
 
 const port = 3000;
 
