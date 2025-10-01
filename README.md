@@ -11,7 +11,7 @@ Install my-project with npm
   cd my-project
 ```
 
-    ## ✨ Features
+## ✨ Features
 
 - Create, read, update, and delete tasks
 - Mark tasks as completed
